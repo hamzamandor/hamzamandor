@@ -1,0 +1,38 @@
+const byte r1=5;
+const byte j1=6;
+const byte v1=7;
+const byte r2=8;
+const byte j2=9;
+const byte v2=10;
+
+void setup() {
+
+       for(bybe Npin=5 ; Npin < 11 ; Npin++)
+    pinMode(Npin,OUTPUT);
+  }
+
+void loop() {
+digitalWrite(r1,HIGH);
+ 
+digitalWrite(v2,HIGH);
+delay(3000);
+digitalWrite(v2,LOW);
+digitalWrite(j2,HIGH);
+delay(1000);
+digitalWrite(r2,HIGH);
+digitalWrite(v1,HIGH);
+
+digitalWrite(j2,LOW);
+digitalWrite(r1,LOW );
+delay(3000);
+
+digitalWrite(v1,LOW);
+digitalWrite(j1,HIGH);
+delay(1000);
+
+digitalWrite(R2,LOW);
+digitalWrite(J1,LOW);
+}
+
+
+
