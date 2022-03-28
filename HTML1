@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+<html>
+      <head>
+	     <meta charset ="UTF-8"/>
+	  
+	  
+	   </head>
+				
+		<body>
+		    <h1 align="center">Tp cours HTML </h1>
+			<hr/>
+			<center>
+			   le cours HTML/JS/CSS
+			</center>
+			<hr/>	
+            <ol> 
+                <li>etu 1 </li>
+                <li>etu 2 </li>	
+                <li>etu 3 </li>	
+				<li>Liste des modules :
+				    <ul>
+					    <li>MODULE 1 </li>
+						<li>MODULE 2 </li>
+						
+					</u1>
+                </li>					
+            </ol>				
+		   <img src="OIP.jpg" width="50%" height="200px" />
+		   <center>
+		     <a href ="https://www?.gogle.com/" target="_blank">le site GOOGLE</a>
+			 <br/>
+			 
+		</body>
+			  
+	</html>
