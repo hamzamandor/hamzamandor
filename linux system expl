@@ -1,0 +1,58 @@
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -alF'
+alias ls='ls --color=auto'
+omar@omar-virtual-machine:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+omar@omar-virtual-machine:~$ cmd1 the ghost
+cmd1: command not found
+omar@omar-virtual-machine:~$ cmd1 ghost
+cmd1: command not found
+omar@omar-virtual-machine:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+omar@omar-virtual-machine:~$ cm1
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+omar@omar-virtual-machine:~$ cm1 ghost
+omar@omar-virtual-machine:~$ ls
+Desktop  Documents  Downloads  ghost  Music  Pictures  Public  snap  Templates  Videos
+omar@omar-virtual-machine:~$ ls-t
+ls-t: command not found
+omar@omar-virtual-machine:~$ ls -t
+ghost  snap  Downloads  Desktop  Documents  Music  Pictures  Public  Templates  Videos
+omar@omar-virtual-machine:~$ ls -rt
+Videos  Templates  Public  Pictures  Music  Documents  Desktop  Downloads  snap  ghost
+omar@omar-virtual-machine:~$ ls -rtl
+total 40
+drwxr-xr-x 2 omar omar 4096 mars  30 19:26 Videos
+drwxr-xr-x 2 omar omar 4096 mars  30 19:26 Templates
+drwxr-xr-x 2 omar omar 4096 mars  30 19:26 Public
+drwxr-xr-x 2 omar omar 4096 mars  30 19:26 Pictures
+drwxr-xr-x 2 omar omar 4096 mars  30 19:26 Music
+drwxr-xr-x 2 omar omar 4096 mars  30 19:26 Documents
+drwxr-xr-x 2 omar omar 4096 mars  30 19:26 Desktop
+drwxr-xr-x 2 omar omar 4096 mars  31 11:33 Downloads
+drwx------ 3 omar omar 4096 avril  1 18:38 snap
+drwxrwxr-x 2 omar omar 4096 avril  1 18:44 ghost
+omar@omar-virtual-machine:~$ ls -tl
+total 40
+drwxrwxr-x 2 omar omar 4096 avril  1 18:44 ghost
+drwx------ 3 omar omar 4096 avril  1 18:38 snap
+drwxr-xr-x 2 omar omar 4096 mars  31 11:33 Downloads
+drwxr-xr-x 2 omar omar 4096 mars  30 19:26 Desktop
+drwxr-xr-x 2 omar omar 4096 mars  30 19:26 Documents
+drwxr-xr-x 2 omar omar 4096 mars  30 19:26 Music
+drwxr-xr-x 2 omar omar 4096 mars  30 19:26 Pictures
+drwxr-xr-x 2 omar omar 4096 mars  30 19:26 Public
+drwxr-xr-x 2 omar omar 4096 mars  30 19:26 Templates
+drwxr-xr-x 2 omar omar 4096 mars  30 19:26 Videos
+omar@omar-virtual-machine:~$ 
+
+-------------------------------------------------------------------------------------------------exer1----------------------------------------------------
+1:  751=rwx r-x --x
+    214=r-x -w- --x
+    521= r-x-ww---x
+    150=--x r-x ---
+2:  rw-r--r--= 644
+    rwxr-xr-x=755
+    
