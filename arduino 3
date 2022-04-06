@@ -33,6 +33,25 @@ delay(1000);
 digitalWrite(R2,LOW);
 digitalWrite(J1,LOW);
 }
+----------------------------------------------------------EXER DE ALUPER PAR BOUTON---------------------------------------------
+const byte bouton =2;
+const byte led =3;
+byte cpt=0;
 
+
+
+void setup() {
+ pinMode (bouton ,  INPUT);
+ pinMode (led , OUTPUT );
+ 
+ 
+   
+  }
+
+void loop() {
+if(digitalRead ( bouton)) cpt++;
+if(cpt==1) {digitalWrite(led,HIGH);delay(100);}
+else { digitalWrite(led,LOW);
+ cpt=0; delay(100);}}
 
 
