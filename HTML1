@@ -33,3 +33,31 @@
 		</body>
 			  
 	</html>
+---------------------------- exer table--------------------------------------
+<!Doctype html>
+<html>
+<head>
+
+</head>
+<body>
+	<table border="1" cellspacing="0" cellpadding="12" align="center" width="60%">
+<tr  align= "center" bgcolor="#FF0000">
+<td colspan="4">1</td>
+		 <td>1</td>
+		 </tr>
+		 <tr>
+		
+
+		 	<td align="center">11</td>
+			<td>21</td>
+			<td rowspan="2">31</td>
+	</tr>
+	<tr>
+			<td>55</td>
+			<td>32</td>
+			
+	</tr>
+	</table>
+</body>
+
+<html>
