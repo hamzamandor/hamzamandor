@@ -53,5 +53,60 @@ if(digitalRead ( bouton)) cpt++;
 if(cpt==1) {digitalWrite(led,HIGH);delay(100);}
 else { digitalWrite(led,LOW);
  cpt=0; delay(100);}}
+------------------------exer de detecteur(fauto rez ) ---------------------------------------------
+const byte led  =10;
+const int lum=8;
+
+void setup() {
+pinMode(led,OUTPUT);
 
 
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+ if  (analogRead (lum) > 500)
+       digitalWrite(led,LOW);
+  else
+  digitalWrite(led,HIGH);
+}
+--------------------lectur_lum(  fr 2)------------------------                  --------------------------------------------
+const byte led  =10;
+const int lum=8;
+int lectur_lum;
+byte luminosite;
+
+
+void setup() {
+
+
+
+}
+
+void loop() {
+  lectur_lum=1024- analogRead(lum);
+  luminosite=lectur_lum/4;
+  analogWrite (led,luminosite);
+  delay(500);
+}
+------------------------------------------ exer3 led avtg                          ------------------------------------------------------------------
+const byte led  =10;
+byte luminosite;
+
+void setup() {
+for (luminosite=0;luminosite<256;luminosite=luminosite+70)
+{
+    analogWrite (led,luminosite);
+  delay(500);
+  }
+for (luminosite=256;luminosite>0;luminosite=luminosite-70)
+{
+    analogWrite (led,luminosite);
+  delay(500);
+  }
+
+}
+
+void loop() {
+}
