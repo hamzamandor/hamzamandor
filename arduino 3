@@ -110,3 +110,25 @@ for (luminosite=256;luminosite>0;luminosite=luminosite-70)
 
 void loop() {
 }
+_______________________________________EXERLCD __________________________________________
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
+
+LiquidCrystal_I2C lcd(0x27,20,4);
+void setup() {
+  // put your setup code here, to run once:
+ lcd.init();
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  lcd.backlight();
+  lcd.clear();
+  lcd.setCursor(0,0);
+  lcd.print(" hamza hasnaa");
+  lcd.setCursor(5,1);
+  lcd.print("MANDOR");
+  delay(1000);
+
+}
